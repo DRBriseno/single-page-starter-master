@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Entreprenuer Spotlight: Jessica Alba Keynote</title>
+		<style>
+
+			body {
+				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+				background-color: #375520;
+				line-height: 1.5;
+			}
+
+			nav, main > section {
+				overflow: auto;
+			}
+
+			main > section, main > footer {
+				min-height: 100vh;
+			}
+
+			/* Style the nav bar */
+			#nav {
+				justify-content: space-even;
+				align-items: baseline;
+				padding: 2em;
+				background-color: #375520;
+				color: #eee;
+				display: flex;
+			}
+
+			nav h1, ul {
+				margin: 0
+			}
+
+			nav a {
+				text-decoration: none;
+				color: #eee;
+			}
+
+			nav ul {
+				display: flex;
+				list-style: none;
+			}
+
+			nav ul a {
+				padding: 1.5em;
+				color: white;
+			}
+
+			nav ul a:hover {
+				color: #f09436;
+			}
+
+			#jessica-alba {
+				background-color: #26B63E;
+				background-image: url(images/JessicaAHon4.jpg);
+				background-size: cover;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 4em;
+				color: #fff;
+			}
+
+			#jessica-alba > div {
+				position: relative;
+				left: -120px;
+				top: 120px;
+			}
+
+			#jessica-alba h2, #jessica-alba p {
+				margin: 0;
+				text-shadow: 0 0 20px #000000;
+			}
+
+
+			/* Create some cards in this section */
+			#jessica-alba1 {
+				background-color: #26323f;
+			}
+
+			#jessica-alba1 ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+			}
+
+			#jessica-alba1 > h2 {
+				margin: 1em;
+				font-size: 3em;
+				text-align: center;
+				color: #eee;
+			}
+
+			.card {
+				width: 400px;
+				margin: 1em;
+				background-color: #eee;
+				box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
+			}
+
+			.card img {
+				width: 100%;
+			}
+
+			.card h3 {
+				font-size: 2em;
+			}
+
+			.card h3, .card p {
+				margin: 1rem;
+			}
+
+			#jessica-alba2 {
+				background-color: #5856D6;
+				background-image: url(images/JessicaAHon1.jpg);
+				background-size: cover;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#jessica-alba2 > div {
+				background-color:rgba(255, 255, 255, 0.65);
+				padding: 2em;
+				width: 75%;
+				max-width: 700px;
+			}
+
+			#jessica-alba2  h2 {
+				font-size: 4em;
+				margin: 0 0 1rem 0;
+				text-align: center;
+			}
+
+
+			/* Style this */
+			#jessica-alba3 {
+				background-color: #461c3b;
+				display: flex;
+				color: #26323f;
+				background-image: url(images/JessicaAlbaDiaper.png);
+				background-size: cover;
+			}
+
+			#jessica-alba3 > div {
+				display: flex;
+				justify-content: center;
+				width: 75%;
+				margin: auto;
+			}
+
+			#jessica-alba3 h2, #jessica-alba4 p {
+				margin: 0 0 1rem 0;
+			}
+
+			#jessica-alba3 h2 {
+				font-size: 2em;
+			}
+
+			#jessica-alba3 > div > div:nth-child(1) {
+				flex: 3;
+				margin: 0 2em 0 0;
+			}
+
+			#jessica-alba3 > div > div:nth-child(2) {
+				flex: 2;
+			}
+
+			#jessica-alba3 > div img {
+				width: 100%;
+				box-shadow:0 0 22px rgba(0, 0, 0, 0.44);
+			}
+
+
+            #jessica-alba4 {
+				background-color: #461c3b;
+				display: flex;
+                color: #831501;
+				background-image: url(images/JessicaAHon9.jpg);
+				background-size: cover;
+			}
+
+			#jessica-alba4 > div {
+				display: flex;
+				justify-content: center;
+				width: 75%;
+				margin: auto;
+			}
+
+			#jessica-alba3 h2, #jessica-alba4 p {
+				margin: 0 0 1rem 0;
+			}
+
+			#jessica-alba4 h2 {
+				font-size: 2em;
+			}
+
+			#jessica-alba4 > div > div:nth-child(1) {
+				flex: 3;
+				margin: 0 2em 0 0;
+			}
+
+			#jessica-alba4 > div > div:nth-child(2) {
+				flex: 2;
+			}
+
+			#jessica-alba4 > div img {
+				width: 100%;
+				box-shadow:0 0 22px rgba(0, 0, 0, 0.44);
+			}
+
+
+			#contact {
+				background-color: #c6fdf5;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#contact > form {
+				display: flex;
+			}
+
+			#contact > form > div {
+				display: flex;
+				flex-direction: column;
+			}
+
+			#contact label {
+				display: flex;
+				flex-direction: column;
+			}
+
+			label {
+				margin: 1em 0;
+			}
+
+			label span {
+				margin: 1em 0;
+			}
+
+			input, textarea {
+				border: 1px solid #000;
+				padding: 0.5em;
+				margin: 0 2em 0 0;
+				width: 20em;
+				font-size: 1em;
+			}
+
+			textarea {
+				height: 9em;
+				margin: 0 0 0 0;
+			}
+
+			form button {
+				width: auto;
+				font-size: 1em;
+				margin: 1em 0;
+				align-self: flex-end;
+				padding: 0.5em 1em;
+				background-color:rgb(0, 0, 0);
+				color: #fff;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+
+		<main>
+			<nav id="nav">
+				<h1><a href="#">Entreprenuer Spotlight</a></h1>
+				<ul>
+					<li><a href="#jessica-alba">Jessica Alba</a></li>
+					<li><a href="#jessica-alba1">Early Life</a></li>
+					<li><a href="#jessica-alba2">Big Screen Breakthrough</a></li>
+                    <li><a href="#jessica-alba3">The Honest Company</a></li>
+                    <li><a href="#jessica-alba4">Contact Us</a></li>
+				</ul>
+			</nav>
+		
+			<section id="jessica-alba">
+				<div>
+					<h2></h2>
+					<p></p>
+				</div>
+			</section>
+		
+			<section id="jessica-alba1">
+				<h2>Jessica Alba Forbes Keynote</h2>
+				<ul>
+					<li class="card">
+						<img src="images/JessicaAHon6.jpg">
+						<h3>Early Life</h3>
+						<p>Jessica Marie Alba; born April 28, 1981 is an American actress and businesswoman. She began her television and movie appearances at age 13 in Camp Nowhere and The Secret World of Alex Mack (1994), but rose to prominence at 19, as the lead actress of the television series Dark Angel (2000–2002), in which she received a Golden Globe nomination.</p>
+					</li>
+					<li class="card">
+						<img src="images/JessicaAHon2.jpg">
+						<h3>Big Screen Breakthrough</h3>
+						<p>Her big screen breakthrough came in Honey (2003). She soon established herself as a Hollywood actress, and has starred in numerous box office hits throughout her career, including Fantastic Four (2005), Fantastic Four: Rise of the Silver Surfer (2007), Good Luck Chuck (2007), The Eye (2008), Valentine's Day (2010), Little Fockers (2010), and Mechanic: Resurrection (2016). She is a frequent collaborator of director Robert Rodriguez, having starred in Sin City (2005), Machete (2010), Spy Kids: All the Time in the World (2011), Machete Kills (2013), and Sin City: A Dame to Kill For (2014). Since 2019, Alba stars in the Spectrum action crime series L.A.'s Finest.</p>
+					</li>
+					<li class="card">
+						<img src="images/JessicaAHon3.jpg">
+						<h3>The Honest Company</h3>
+						<p>In 2011, Alba co-founded The Honest Company, a consumer goods company that sells baby, personal and household products. Magazines including Men's Health, Vanity Fair and FHM have included her on their lists of the world's most beautiful women.
+                        She will star in and executive produce a new documentary series for Disney+ called "Parenting Without Borders" (working title) which will focus on families around the world and their beliefs and culture.</p>
+					</li>
+				</ul>
+			</section>
+		
+			<section id="jessica-alba2">
+				<div>
+					<h2>Jessica Alba</h2>
+					<p>In 2015, at the <a href="https://www.forbes.com/video/4292986931001/jessica-alba-keynote-interview-forbes-womens-summit-2015/?sh=2ad10985a6a2">Forbes' Womens Summit, Jessica Alba was interviewed by Moira Forbes</a>.
+                        Jessica Alba gave a keynote speech that despite being Presented interview style, with both women in chairs seated casually across from one another while conversating, Jessica Alba gave a keynote speech that captivated the audience. Though her career began in acting years before Jessica faced a substantial amount of criticism, skepticism, and adversity when she ventured into entrepreneurship with a dream of creating a transparent consumer brand. Nonetheless, Jessica went on to create a pioneering brand in its field. Proving the skeptics wrong, Honest had become the “unicorn” and was estimated to have a valuation of over a billion dollars in its first three years. Jessica spoke elegantly, though rambling a little and interrupting the host a few times, she came across as endearing and real.
+					</p>
+				</div>
+            </section>
+            
+            
+            <section id="jessica-alba4">
+				<div>
+					<h2>Wendy Carlos</h2>
+					<p>Understanding the demographic of the Forbes Women’s Summit, Jessica could not rely on her celebrity status alone. Surrounded by well-accomplished women from all over the world, she communicated her story and the Honest brand story, with intelligence and also a level of vulnerability. Speaking of her mother, her own health issues, and her frustrations in finding safe products for her baby, she integrated empathy into her brand. Her communication during the keynote made her relatable and gave a sense that although she was an actress, a founder and CEO, and obviously a talent...she was like most women. As she put it “She created the brand because someone had to.”  	
+                    </p>
+				</div>
+			</section>
+		
+			<section id="jessica-alba3">
+				<div>
+					<div>
+						<h2>Suzanne Ciani</h2>
+						<p>Her body language and the overall way she spoke with the audience as well as the interviewer, made it feel like you were listening to a friend. A wife and mother who had the same challenges as you. Doing laundry, worrying about the health of her family, and dealing with insecurities of “not being liked” gave insight into her own humanness. I believe also the style in which the speech was delivered also helped with this. Sitting down in chairs, facing the audience but turned towards one another, almost gave the sense you were sitting in on a living room conversion. This was very effective in her overall keynote but also was consistent with the overall messaging of her brand.
+                        </p>
+                        <p>Not losing sight of the level of accomplishment that was in that room, Jessica also came across as incredibly capable and intelligent. She was elegant and thoughtful with her words and carried herself gracefully. At one point, while explaining what drove her to make career decisions early on in her 20’s, she described her upbringing a the limitations that financial constraints had placed on her family. She spoke of her need to overcome that dynamic and often having to overcompensate in rooms because people didn’t think of her a smart. At one point she actually stated, “I didn’t think I was smart for a really long time.” This was an extremely powerful statement, as she sat at the head of the room, giving a keynote to a room full of women who by most standards would be considered highly intelligent. It effectively communicated that no matter what accomplishments one has accomplished, no matter how smart one is, no matter how much money one has accumulated, or what position, accolades or title one has...we all struggle with insecurities and obstacles in life. I personally appreciated her authenticity, vulnerability, and humility. I found the keynote to be greatly inspiring and thought-provoking.</p>
+
+					</div>
+					<div>
+						<img src="images/JessicaAHon8.jpeg">
+					</div>
+
+				</div>
+				<figure>
+					<img>
+				</figure>
+			</section>
+		
+			<footer id="contact">
+                <h2>Contact Us</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lysa3S6qfSs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</iframe>
+				<form>
+					<div>
+						<label>
+							<span>Name</span>
+							<input type="text">
+						</label>
+			
+						<label>
+							<span>Email</span>
+							<input type="email">
+						</label>
+					</div>
+					<div>
+						<label>
+							<span>Message</span>
+							<textarea></textarea>
+						</label>
+						<button type="submit">Send</button>
+					</div>
+				</form>
+			</footer>
+		</main>
+	</body>
+</html>
